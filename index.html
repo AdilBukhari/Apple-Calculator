@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculator</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="calculator">
+            <div id="display">
+                <p id="output">0</p>
+            </div>
+
+            <div id="result" visibility="hidden">0</div>
+            <div id="previous" value="false" visibility="hidden">0</div>
+
+            <button class="top-row" id="clear">AC</button>
+            <button class="top-row" id="delete"><img id="back" src="images/delete.png"></button>
+            <button class="top-row" id="negative">+/-</button>
+
+            <button class="operator" id="divide" value="false">÷</button>
+            <button class="operator" id="multiply" value="false">×</button>
+            <button class="operator" id="subtract" value="false">−</button>
+            <button class="operator" id="add" value="false">+</button>
+            <button id="equal">=</button>
+
+            <button class="numeric" id="one" value="1">1</button>
+            <button class="numeric" id="two" value="2">2</button>
+            <button class="numeric" id="three" value="3">3</button>
+            <button class="numeric" id="four" value="4">4</button>
+            <button class="numeric" id="five" value="5">5</button>
+            <button class="numeric" id="six" value="6">6</button>
+            <button class="numeric" id="seven" value="7">7</button>
+            <button class="numeric" id="eight" value="8">8</button>
+            <button class="numeric" id="nine" value="9">9</button>
+            <button class="numeric" id="zero" value="0">0</button>
+            <button class="numeric" id="decimal" value=".">.</button>
+        </div>
+    </body>
+</html>

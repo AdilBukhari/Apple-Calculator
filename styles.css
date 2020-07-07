@@ -1,0 +1,179 @@
+body {
+    background-color: black;
+}
+
+#calculator {
+    width: 100px;
+	height: 100px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(170px, auto) repeat(5, 100px);
+
+    grid-template-areas: 
+        "display display display display"
+        "clear negative delete divide"
+        "seven eight nine multiply"
+        "four five six subtract"
+        "one two three add"
+        "zero zero point equal";
+}
+
+#output {
+    text-align: right;
+    color: white;
+    font-size: 80px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}
+
+button {
+    border-radius: 100%;
+    border: 8px solid black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.operator:hover, #equal:hover {
+    background-color: #ffbf5c;
+}
+
+.numeric:hover, .top-row:hover {
+    filter: brightness(150%);
+}
+
+#zero {
+    border-top-left-radius: 100px 100%;
+    border-bottom-left-radius: 100px 100%;
+    border-top-right-radius: 100px 100%;
+    border-bottom-right-radius: 100px 100%;
+}
+
+.operator, .numeric, #equal {
+    color: white;
+}
+
+#display {
+    grid-area: display;
+    margin: 8px;
+    background-color: #171615;
+}
+
+#back {
+    max-width: 75%;
+    max-height: 75%;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.top-row {
+    background-color: #a5a5a5;
+}
+
+.operator {
+    background-color: #ff9e0a;
+    font-family: serif;
+    font-size: 35px;
+    font-weight: 540;
+
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.numeric {
+    background-color: #333333;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#delete {
+    grid-area: delete;
+}
+
+#negative {
+    grid-area: negative;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#subtract {
+    grid-area: subtract;
+}
+
+#add {
+    grid-area: add;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+
+#zero {
+    grid-area: zero;
+}
+
+#decimal {
+    grid-area: point;
+}
+
+#equal {
+    grid-area: equal;
+    background-color: #ff9e0a;
+}
